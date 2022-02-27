@@ -1,4 +1,3 @@
-from pydoc import resolve
 from configuration.registry import Registry
 from configuration.config import Config
 import catalogue

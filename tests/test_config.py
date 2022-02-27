@@ -1,5 +1,4 @@
 from configuration.config import Config
-from pytest import fixture
 
 
 config1 = """
