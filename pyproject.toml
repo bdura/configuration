@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "configuration"
+version = "0.0.0"
+description = "A package for handling configuration."
+authors = ["Basile Dura <basile@bdura.me>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+thinc = "^8.0.13"
+catalogue = "^2.0.6"
+mkdocs-bibtex = "^2.0.1"
+
+[tool.poetry.dev-dependencies]
+mkdocs-material = "^8.2.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

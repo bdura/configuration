@@ -1,0 +1,23 @@
+site_name: Configuration
+repo_url: https://github.com/bdura/configuration
+
+theme:
+  name: material
+  features:
+    - navigation.tracking
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - footnotes
+
+plugins:
+  - search
+  - bibtex:
+      bib_file: "docs/references.bib"
+  - mkdocstrings
