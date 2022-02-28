@@ -1,6 +1,7 @@
-from typing import List
-from thinc import config
 from pathlib import Path
+from typing import List
+
+from thinc import config
 
 
 class Config(config.Config):

@@ -1,6 +1,5 @@
 from configuration.config import Config
 
-
 config1 = """
 [paths]
 path1 = "/tmp/path1"

@@ -1,6 +1,7 @@
-from configuration.registry import Registry
-from configuration.config import Config
 import catalogue
+
+from configuration.config import Config
+from configuration.registry import Registry
 
 
 class Reg(Registry):
