@@ -19,6 +19,4 @@ markdown_extensions:
 
 plugins:
   - search
-  - bibtex:
-      bib_file: "docs/references.bib"
   - mkdocstrings

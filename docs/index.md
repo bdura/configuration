@@ -1,17 +1,10 @@
-# Welcome to MkDocs
+# Overview
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This project aims at providing an abstraction over Thinc's powerful configuration system, as well as catalogue's registry system.
 
-## Commands
+## Rationale
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+The people at explosion have made tremendous efforts to provide a usable configuration and registry system. However, I found there were a few points missing:
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+1. The code that connects the dots is hidden deep into SpaCy and Thinc, making boilerplate code necessary at the start of each new project
+2. The registry system lacks a unified resolution system

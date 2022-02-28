@@ -9,6 +9,7 @@ python = "^3.9"
 thinc = "^8.0.13"
 catalogue = "^2.0.6"
 mkdocs-bibtex = "^2.0.1"
+mkdocstrings = {extras = ["python"], version = "^0.18.0"}
 
 [tool.poetry.dev-dependencies]
 mkdocs-material = "^8.2.3"
