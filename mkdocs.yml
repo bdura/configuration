@@ -5,6 +5,7 @@ theme:
   name: material
   features:
     - navigation.tracking
+    - navigation.instant
 
 markdown_extensions:
   - pymdownx.highlight:
