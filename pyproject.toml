@@ -9,7 +9,6 @@ python = "^3.9"
 thinc = "^8.0.13"
 catalogue = "^2.0.6"
 mkdocs-bibtex = "^2.0.1"
-mkdocs = "^1.2.3"
 
 [tool.poetry.dev-dependencies]
 mkdocs-material = "^8.2.3"
