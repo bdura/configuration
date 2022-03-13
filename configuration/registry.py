@@ -32,14 +32,17 @@ class Registry(object):
             else:
                 filled[key] = value
 
-        first_key = list(filled.keys())[0]
+        keys = list(filled.keys())
 
-        if first_key.startswith("@"):
+        if keys:
+            first_key = keys[0]
 
-            reg = self._catalogue[first_key[1:]]
+            if first_key.startswith("@"):
 
-            # Handle list of arguments
-            args = filled.pop("*", dict()).values()
-            return reg.get(filled.pop(first_key))(*args, **filled)
+                reg = self._catalogue[first_key[1:]]
+
+                # Handle list of arguments
+                args = filled.pop("*", dict()).values()
+                return reg.get(filled.pop(first_key))(*args, **filled)
 
         return filled
