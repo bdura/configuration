@@ -25,6 +25,8 @@ cfg = """
 [test]
 @misc = "func"
 n = 5
+
+[test2]
 """
 
 
