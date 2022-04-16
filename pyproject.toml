@@ -7,9 +7,9 @@ authors = ["Basile Dura <basile@bdura.me>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 catalogue = "^2.0.6"
-tomli = "^2.0.1"
-tomli-w = "^1.0.0"
 pydantic = "^1.9.0"
+wasabi = "^0.9.1"
+srsly = "^2.4.3"
 
 [tool.poetry.dev-dependencies]
 mkdocs-material = "^8.2.3"

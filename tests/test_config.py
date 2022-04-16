@@ -27,13 +27,13 @@ def test_config(tmp_path):
 
     assert cfg["test"]["path"] == "${paths.path2}"
 
-    # cfg = config.Config.multi_from_disk(path1)
+    cfg = config.Config.multi_from_disk(path1)
 
-    # assert cfg["test"]["path"] == "/tmp/path2"
+    assert cfg["test"]["path"] == "/tmp/path2"
 
-    # cfg = config.Config.multi_from_disk(path1, path2)
+    cfg = config.Config.multi_from_disk(path1, path2)
 
-    # assert cfg["test"]["path"] == "/tmp/path3"
+    assert cfg["test"]["path"] == "/tmp/path3"
 
 
 def test_check_last():
@@ -42,28 +42,6 @@ def test_check_last():
 
     assert not any(res[:-1])
     assert res[-1]
-
-
-def test_merge():
-    d1 = {
-        "a": 1,
-        "b": {"a": 2, "b": 2},
-    }
-    d2 = {
-        "a": {"a": 1, "b": 2},
-        "b": {"a": 1},
-        "c": 1,
-    }
-
-    m = {
-        "a": {"a": 1, "b": 2},
-        "b": {"a": 1, "b": 2},
-        "c": 1,
-    }
-
-    merged = config.merge(d1, d2)
-
-    assert merged == m
 
 
 def test_config_merge():
@@ -86,4 +64,4 @@ def test_config_merge():
 
     c1 = config.Config(d1)
 
-    assert c1.merge(d2).data == m
+    assert c1.merge(d2) == m

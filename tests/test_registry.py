@@ -30,7 +30,7 @@ n = 5
 
 
 def test_registry():
-    config = Config.from_str(cfg)
+    config = Config().from_str(cfg)
     resolved = registry.resolve(config)
 
     assert resolved["test"]() == 5
