@@ -1,7 +1,6 @@
 import catalogue
 
-from configuration.config import Config
-from configuration.registry import Registry
+from configuration import Config, Registry
 
 
 class Reg(Registry):
@@ -31,7 +30,7 @@ n = 5
 
 
 def test_registry():
-    config = Config().from_str(cfg)
+    config = Config.from_str(cfg)
     resolved = registry.resolve(config)
 
     assert resolved["test"]() == 5

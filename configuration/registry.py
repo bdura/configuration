@@ -4,13 +4,6 @@ import catalogue
 
 
 class Registry(object):
-
-    # extractors = catalogue.create("edspdf", "extractors")
-    # params = catalogue.create("edspdf", "params")
-    # readers = catalogue.create("edspdf", "readers")
-    # transforms = catalogue.create("edspdf", "transforms")
-    # classifiers = catalogue.create("edspdf", "classifiers")
-
     @property
     def _catalogue(self):
         return {
